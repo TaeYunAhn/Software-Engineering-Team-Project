@@ -1,5 +1,6 @@
 import Calculator.operation.operation as calculate
 from Calculator.ErrorProcess.isError import is_error as errorCheck
+from Calculator.EasterEgg.easter_egg import easter_egg as easterEgg
 
 lines = []
 while True:
@@ -12,5 +13,7 @@ while True:
 if errorCheck(lines):
     answer = calculate(lines)
     print(answer)
+    if answer == 7532:
+        easterEgg()
 else:
     print("ERROR!")
