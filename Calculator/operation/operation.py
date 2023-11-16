@@ -20,5 +20,4 @@ def operation(data):
         elif operator[i] == "*":
             answer *= nums[i + 1]
 
-    # return answer
-    print(answer)
+    return answer

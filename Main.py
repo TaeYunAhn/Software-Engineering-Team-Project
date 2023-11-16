@@ -9,4 +9,5 @@ while True:
         lines.append(line)
         
 
-caluate(lines)
+answer = caluate(lines)
+print(answer)
