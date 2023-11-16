@@ -1,0 +1,1 @@
+from .isError import is_error

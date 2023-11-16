@@ -1,13 +1,16 @@
-import Calculator.operation.operation as caluate
+import Calculator.operation.operation as calculate
+import Calculator.ErrorProcess.isError as isError
 
 lines = []
 while True:
     line = input()
     if line == "=":
         break
-    else :
+    else:
         lines.append(line)
-        
 
-answer = caluate(lines)
-print(answer)
+if isError.is_error(lines):
+    answer = calculate(lines)
+    print(answer)
+else:
+    print("ERROR!")
