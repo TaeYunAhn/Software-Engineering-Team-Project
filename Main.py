@@ -1,5 +1,5 @@
 import Calculator.operation.operation as calculate
-import Calculator.ErrorProcess.isError as isError
+from Calculator.ErrorProcess.isError import is_error as errorCheck
 
 lines = []
 while True:
@@ -9,7 +9,7 @@ while True:
     else:
         lines.append(line)
 
-if isError.is_error(lines):
+if errorCheck(lines):
     answer = calculate(lines)
     print(answer)
 else:
