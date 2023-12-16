@@ -14,6 +14,9 @@ if errorCheck(lines):
     answer = calculate(lines)
     print(answer)
     if answer == 7532:
-        easterEgg()
+        easterEgg(7532)
+    if answer == 1015:
+        easterEgg(1015)
+        
 else:
-    print("ERROR!")
+    print("[SYSTEM] ERROR!")

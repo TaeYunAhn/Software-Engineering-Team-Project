@@ -1,6 +1,7 @@
-def easter_egg():
-    print('\033[1m' + '\033[35m' + '''“JeonBuk National University's Greatest Professor of All Time”''' + '\033[0m')
-    print('\033[32m' + '''⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+def easter_egg(answer):
+    if answer == 7532:
+        print("[EVENT] " + '\033[1m' + '\033[35m' + '''“JeonBuk National University's Greatest Professor of All Time”''' + '\033[0m')
+        print('\033[32m' + '''⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⣀⣤⣤⣤⣤⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⣼⣿⣿⣿⠿⠿⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⢸⣿⣿⠋⠀⠀⠀⠈⢻⣿⣿⠀⠀⠀⠀⠀⠀
@@ -15,3 +16,7 @@ def easter_egg():
 ⣿⣿⣿⣿⣿⣿⣿⡟⠀⣸⣿⡇⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿
 ⣿⣿⣿⣿⣿⣿⣿⣿⠀⣿⣿⣷⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿
 ⣿⣿⣿⣿⣿⣿⣿⣿⣾⣿⣿⣿⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿''' + '\033[0m')
+        
+    elif answer == 1015:
+        print("[EVENT] 전북대 개교기념일입니다.")
+
