@@ -39,3 +39,20 @@ def is_error(data):
             return False
 
     return True
+
+def is_factorial_error(data):
+    # 입력된 데이터가 정확히 두 개의 요소를 가지는지 확인
+    if len(data) != 2:
+        return False
+
+    number, symbol = data
+
+    # 첫 번째 요소가 0 이상의 정수인지 확인
+    if not number.isdigit() or int(number) < 0:
+        return False
+
+    # 두 번째 요소가 '!' 기호인지 확인
+    if symbol != '!':
+        return False
+
+    return True

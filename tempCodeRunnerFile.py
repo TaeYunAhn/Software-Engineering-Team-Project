@@ -20,8 +20,7 @@ while True:
 
 if(calculateFlag == False):
     if FactorialErrorCheck(lines):
-        factorial_result = math.factorial(int(lines[0]))
-        print('= ' + str(factorial_result))
+        math.factorial(int(lines[0]))
     else:
         print("[SYSTEM] INPUT ERROR!")
 
