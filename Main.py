@@ -22,8 +22,10 @@ if(calculateFlag == False):
     if FactorialErrorCheck(lines):
         factorial_result = math.factorial(int(lines[0]))
         print('= ' + str(factorial_result))
+    elif int(lines[0])< 0 :
+        print("[ERROR] Out Of Range")
     else:
-        print("[SYSTEM] INPUT ERROR!")
+        print("[ERROR] Input Error")
 
 elif(calculateFlag == True):
     if errorCheck(lines):
@@ -33,5 +35,5 @@ elif(calculateFlag == True):
           easterEgg(7532)
         if answer == 1015:
             easterEgg(1015)
-else:
-    print("[SYSTEM] ERROR!")
+    else:
+        print("[SYSTEM] ERROR!")
