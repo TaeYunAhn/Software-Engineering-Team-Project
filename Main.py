@@ -22,6 +22,8 @@ if(calculateFlag == False):
     if FactorialErrorCheck(lines):
         factorial_result = math.factorial(int(lines[0]))
         print('= ' + str(factorial_result))
+    elif int(lines[0])< 0 :
+        print("[SYSTEM] Out Of Range")
     else:
         print("[SYSTEM] INPUT ERROR!")
 
