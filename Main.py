@@ -31,8 +31,8 @@ elif(calculateFlag == True):
     if errorCheck(lines):
         answer = calculate(lines)
         print(answer)
-        if answer == 7532:
-          easterEgg(7532)
+        if answer == 7503:
+            easterEgg(7503)
         if answer == 1015:
             easterEgg(1015)
     else:
